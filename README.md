@@ -18,3 +18,22 @@ In the solution proposed, the control layer (see figure 1) serves three primary 
 
 It must also be considered that without the implementation of appropriate database access and audit controls provided by the Hadoop framework (Revathy and Srinivasan, 2018), the proposed solution becomes ineffective. Without these additional security controls, users can easily bypass the de-identification layer without detection. It is intended to be used in conjunction with the ‘Secure Mode’ feature provided by Apache Hadoop, as well as more standard organisational controls like multi-factor authentication, data encryption and network security hygiene.
 
+## Instructions
+1. Ensure you have Python 3 installed on your machine. You can find this at https://www.python.org/downloads/.
+1. Extract the compressed archive 'de-id version0.1'.
+1. Ensure the 'example.csv' file is in the local directory (it is by default).
+1. Run the python file 'de-id.py' and the terminal (mac) or command prompt (windows) will open.
+
+## Data Specification
+If the user is importing their own data file in to the program, they should ensure the following data requirements are met to ensure best results.
+
+- All column headers must be in lowercase and spaces replaced with underscore; example 'annual_salary'.
+- Date of birth attributes must be labelled 'dob'.
+- Phone number attributes must be labelled 'phone'.
+- Email address attributes must be labelled 'email'.
+- Postal or Zip Code attributes must be labelled 'post_code'.
+
+#### Future Enhancements
+- Handle JSON and XML filetypes.
+- Delete original input file after it has been imported.
+- Handle incompatible identifying attribute names.
