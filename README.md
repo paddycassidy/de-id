@@ -20,7 +20,6 @@ It must also be considered that without the implementation of appropriate databa
 
 ## Instructions
 1. Ensure you have Python 3 installed on your machine. You can find this at https://www.python.org/downloads/.
-1. Extract the compressed archive 'de-id version0.1'.
 1. Ensure the 'example.csv' file is in the local directory (it is by default).
 1. Run the python file 'de-id.py' and the terminal (mac) or command prompt (windows) will open.
 
